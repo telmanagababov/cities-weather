@@ -1,0 +1,10 @@
+<ctw-navigation title="Weather"></ctw-navigation>
+
+<div id="weather-container" class="container-fluid">
+  <ctw-city-weather
+    *ngFor="let city of cities"
+    class="city-weather"
+    [city]="city"
+    (click)="showForecast(city)"
+  ></ctw-city-weather>
+</div>

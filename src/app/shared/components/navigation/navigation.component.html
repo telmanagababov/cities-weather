@@ -1,0 +1,14 @@
+<nav class="navbar navbar-dark bg-primary text-center sticky-top">
+  <h3 class="col-12 navbar-brand text-center">
+    {{title}}
+  </h3>
+
+  <button
+    *ngIf="route"
+    class="btn btn-outline-light position-absolute"
+    type="button"
+    [routerLink]="route.link"
+  >
+    {{route.label}}
+  </button>
+</nav>

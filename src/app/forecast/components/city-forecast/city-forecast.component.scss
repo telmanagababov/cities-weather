@@ -1,0 +1,27 @@
+ctw-city-preview {
+  height: 180px;
+  display: block;
+}
+
+.card-title {
+  text-align: center;
+}
+
+#forecast-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  ctw-forecast-item {
+    margin: 10px;
+  }
+}
+
+.spinner-container {
+  height: 180px;
+
+  .spinner {
+    position: relative;
+    top: calc(50% - 20px);
+  }
+}

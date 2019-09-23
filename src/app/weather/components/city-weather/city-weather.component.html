@@ -1,0 +1,20 @@
+<div class="card">
+  <ctw-city-preview [city]="city"></ctw-city-preview>
+
+  <div class="card-body">
+    <h5 class="card-title">{{city.title}}</h5>
+
+    <ng-container *ngIf="(weather$ | async) as weather; else loader">
+      <p class="card-text">{{weather.description}} {{weather.weather}} °C</p>
+      <p class="card-text">Wind {{weather.details.wind}} m/s</p>
+    </ng-container>
+
+    <ng-template #loader>
+      <div class="spinner-container d-flex justify-content-center">
+        <div class="spinner spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
