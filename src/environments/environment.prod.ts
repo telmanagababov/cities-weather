@@ -8,7 +8,7 @@ export const environment = {
     { title: 'Vancouver', query: 'Vancouver', preview: 'canada' }
   ],
   communication: {
-    gateway: 'http://api.openweathermap.org/data/2.5',
+    gateway: 'https://api.openweathermap.org/data/2.5',
     apiKey: '4492fefd587d2979386d05539af87940',
     updateTimeout: 3600000
   }
